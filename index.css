@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0 auto;
+    background-image: url("./img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 20%;
+    color: white;
+    min-width: 1024px;
+}
+
+header {
+    background-color: rgba(22, 40, 34, .5);
+    height: 100px;
+    vertical-align: middle;
+}
+
+header * {
+    margin-left: 10px;
+}
+
+header span {
+    font: 40px "microsoft yahei";
+    line-height: 100px;
+}
+
+header img {
+    margin-top: 21px;
+    float: left;
+}
+
+main {
+    overflow: hidden;
+    width: 80%;
+    margin: 45px auto;
+    background-color: rgba(22, 40, 34, .8);
+    padding: 20px;
+}
+
+main > span {
+    font: 36px "microsoft yahei";
+    color: rgb(135, 255, 207);
+}
+
+section {
+    border-left: 5px solid transparent;
+    width: 1325px;
+    height: 75px;
+    margin: 15px auto;
+}
+
+section:hover {
+    background-color: rgba(22, 40, 34, 1);
+    border-left: 5px solid rgb(251, 170, 41);
+}
+
+section span {
+    font: bold 26px "microsoft yahei";
+    color: rgb(251, 170, 41);
+    line-height: 36px;
+}
+
+section img {
+    width: 24px;
+}
+
+section a * {
+    vertical-align: middle;
+    margin-left: 15px;
+}
+
+section p {
+    text-indent: 2em;
+    color: rgb(195, 176, 145);
+    font: bold 20px "microsoft yahei";
+}
+
+section div {
+    display: none;
+    float: right;
+    height: 75px;
+    padding: 10px;
+}
+
+section:hover div {
+    display: block;
+}
+
+
+.unavailable::before {
+    position: absolute;
+    content: "";
+    width: 1325px;
+    height: 75px;
+    background: rgb(0, 0, 0, 0.6);
+}
+
+.unavailable:hover {
+    border-left: 5px solid #e8514f;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(22, 40, 34, .5);
+    color: rgb(195, 176, 145);
+    text-align: center;
+    line-height: 60px;
+    height: 60px;
+}
